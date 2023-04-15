@@ -1,0 +1,42 @@
+﻿@model AspTaskFirst.Models.MainViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>All</title>
+</head>
+<body>
+
+<div>
+    <h1 style="color:green">Drinks</h1>
+    @foreach (var item in Model.Drinks)
+        {
+            <h3>Id : @item.Id</h3>
+            <h3>Name : @item.Name</h3>
+            <h3>Price: @item.Price AZN</h3>
+        }
+        <hr />
+        <h1 style="color:green">Hot Meals</h1>
+        @foreach (var item in Model.HotMeals)
+        {
+            <h3>Id : @item.Id</h3>
+            <h3>Name : @item.Name</h3>
+            <h3>Price: @item.Price AZN</h3>
+        }
+        <hr />
+        <h1 style="color:green">Fast Foods</h1>
+        @foreach (var item in Model.FastFoods)
+        {
+            <h3>Id : @item.Id</h3>
+            <h3>Name : @item.Name</h3>
+            <h3>Price: @item.Price AZN</h3>
+        }
+</div>
+</body>
+</html>
